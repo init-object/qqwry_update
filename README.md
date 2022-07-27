@@ -4,5 +4,6 @@
 
 ### 示例
 #### 每周四凌晨三点更新
-```bash 0 3 * * 4 ~/qqwry/update.sh &
+```bash
+0 3 * * 4 ~/qqwry/update.sh &
 ```
