@@ -32,14 +32,14 @@ def deletefile(PATH, DAYS_N):
         elif os.path.isdir(filename):  
             deletefile(filename)
 
-if not os.path.exists('data'):
-    os.makedirs('data')
+if not os.path.exists('/data'):
+    os.makedirs('/data')
 
-if(os.path.exists('data/qqwry.dat')):
-    os.rename('data/qqwry.dat', 'data/qqwry_' + get_FileCreateTime('qqwry.dat') + '.dat')
+if(os.path.exists('/data/qqwry.dat')):
+    os.rename('/data/qqwry.dat', '/data/qqwry_' + get_FileCreateTime('qqwry.dat') + '.dat')
 
-ret = updateQQwry('data/qqwry.dat');
+ret = updateQQwry('/data/qqwry.dat');
 
 print(ret)
 
-deletefile('data', 90)
+deletefile('/data', 90)
