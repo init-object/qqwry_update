@@ -7,7 +7,7 @@ on:
 
 env:
   APP_NAME: qqwry-update
-  DOCKERHUB_REPO: initobject/qqwry-update:latest
+  DOCKERHUB_REPO: initobject/qqwry-update
 
 jobs:
 
