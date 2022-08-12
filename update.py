@@ -36,7 +36,7 @@ if not os.path.exists('/data'):
     os.makedirs('/data')
 
 if(os.path.exists('/data/qqwry.dat')):
-    os.rename('/data/qqwry.dat', '/data/qqwry_' + get_FileCreateTime('qqwry.dat') + '.dat')
+    os.rename('/data/qqwry.dat', '/data/qqwry_' + get_FileCreateTime('/data/qqwry.dat') + '.dat')
 
 ret = updateQQwry('/data/qqwry.dat');
 
